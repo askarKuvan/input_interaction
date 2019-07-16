@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>
+			Your Page Title
+		</title>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+		<link rel="stylesheet" href="phone.css">
+	
+	</head>
+	
+	
+	
+	<body>
+	
+		<div class="top_div" id="tabButtons">
+			<button class="topButtons" id="dialer"> 
+				Dialer
+			</button>
+			<button class="topButtons" id="contactList"> 
+				Contact List
+			</button>
+			<button class="topButtons" id="addContact"> 
+				Add Contact
+			</button>
+		
+		</div>
+		
+		<div class="top_div" id="content">
+			<div class="content" id="content_dialer">
+				<h2> 
+					<label for="dial_name">Dialer</label>
+				</h2>
+				<form class="pure-form pure-form-stacked">
+					<input id="dial_name">
+				</form>
+				<table id="dial_table">
+					<tr class="dial_row">
+						<td><button class="dial_btn" id="dial_1">1</button></td>
+						<td><button class="dial_btn" id="dial_2">2</button></td>
+						<td><button class="dial_btn" id="dial_">3</button></td>
+					</tr>
+					<tr class="dial_row">
+						<td><button class="dial_btn" id="dial_4">4</button></td>
+						<td><button class="dial_btn" id="dial_5">5</button></td>
+						<td><button class="dial_btn" id="dial_6">6</button></td>
+					</tr>
+					<tr class="dial_row">
+						<td><button class="dial_btn" id="dial_7">7</button></td>
+						<td><button class="dial_btn" id="dial_8">8</button></td>
+						<td><button class="dial_btn" id="dial_9">9</button></td>
+					</tr>
+					<tr class="dial_row">
+						<td><button class="dial_btn" id="dial_dial">Dial</button></td>
+						<td><button class="dial_btn" id="dial_clear">Clear</button></td>
+					</tr>
+				</table>
+			</div>
+			<div class="content" id="content_contactList">
+				<h2> 
+					<label for="name">Contact List</label>
+				</h2>
+				<ul id="listOfContacts">
+					<li class="list_row"><button class="list_btn">"Robert Drake"</button></li>
+					<li class="list_row"><button class="list_btn">"Emma Frost"</button></li>
+					<li class="list_row"><button class="list_btn">"Doreen Green"</button></li>
+				</ul>
+			</div>
+			<div class="content" id="content_addContact">
+				<h2> 
+					<label for="name">Add Contact</label>
+				</h2>
+				<form class="pure-form pure-form-stacked">
+					<label for="add_name">Name</label>
+					<input id="add_name" placeholder="Jane Smith">
+					
+					<label for="add_phone">Phone Number</label>
+					<input id="add_phone" placeholder="123-456-7890">
+					
+					<label for="add_email">Email Address</label>
+					<input id="add_email" placeholder="jane.smith@colorado.edu">
+				</form>
+				<table id="add_table">
+					<tr class="add_row">
+						<td><button class="add_btn" id="add_add">Add Contact</button></td>
+						<td><button class="add_btn" id="add_clear">Clear</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="phone.js"></script>
+	
+	</body>
+</html>
