@@ -18,9 +18,9 @@ li
 	width: 100%;
 }
 
-#dial_table, #content_addContact
+#dial_table, #addContact_div
 {
-	width: 310px;
+	width: 400px;
 	margin: auto;
 }
 
